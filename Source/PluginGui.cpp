@@ -2366,7 +2366,7 @@ void PluginGui::buttonClicked (Button* buttonThatWasClicked)
     else if (buttonThatWasClicked == exportButton)
     {
         //[UserButtonCode_exportButton] -- add your button handler code here..
-		WildcardFileFilter wildcardFilter("*.sbi", String::empty, "SBI files");
+		WildcardFileFilter wildcardFilter("*.sbi", String(), "SBI files");
 		FileBrowserComponent browser(FileBrowserComponent::saveMode + FileBrowserComponent::canSelectFiles,
 			instrumentSaveDirectory,
 			&wildcardFilter,
@@ -2387,7 +2387,7 @@ void PluginGui::buttonClicked (Button* buttonThatWasClicked)
     else if (buttonThatWasClicked == loadButton)
     {
         //[UserButtonCode_loadButton] -- add your button handler code here..
-		WildcardFileFilter wildcardFilter("*.sbi", String::empty, "SBI files");
+		WildcardFileFilter wildcardFilter("*.sbi", String(), "SBI files");
 		FileBrowserComponent browser(FileBrowserComponent::openMode + FileBrowserComponent::canSelectFiles,
 			instrumentLoadDirectory,
 			&wildcardFilter,
