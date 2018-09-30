@@ -70,7 +70,7 @@ void WriteConsole(DWORD conout,const char* strPtr,
     
     std::string message (const char* str, uint32_t count);
     
-    std::cout << std::endl << msgType << message;
+    std::cout << std::endl << msgType << &message;
 }
 
 void AllocConsole()
