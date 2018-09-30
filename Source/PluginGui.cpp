@@ -1674,7 +1674,7 @@ PluginGui::PluginGui (AdlibBlasterAudioProcessor* ownerFilter)
 	String context = String("Disable channel ");
 	for (unsigned int i = 0; i < channels.size(); ++i)
 	{
-		TextButton *channel = new TextButton(TRANS("-"), context + (i + 1));
+		TextButton *channel = new TextButton(TRANS("-"), context + String(i + 1));
 		channel->setLookAndFeel(channelButtonLookAndFeel);
 		channel->setColour(TextButton::ColourIds::buttonColourId, Colours::black);
 		channel->setColour(TextButton::ColourIds::buttonOnColourId, Colours::black);
