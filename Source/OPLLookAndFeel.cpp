@@ -76,7 +76,6 @@ void OPLLookAndFeel::drawLinearSliderThumb(Graphics& g, int x, int y, int width,
 		slider.isMouseOverOrDragging() && slider.isEnabled(),
 		slider.isMouseButtonDown() && slider.isEnabled()));
 
-	const float outlineThickness = slider.isEnabled() ? 0.8f : 0.3f;
 
 	if (style == Slider::LinearHorizontal || style == Slider::LinearVertical)
 	{
